@@ -1,0 +1,180 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "email": "demo@user.com",
+      "password": "demo123",
+      "name": "Demo User",
+      "favorites": [
+        "l1",
+        "l5"
+      ]
+    }
+  ],
+  "listings": [
+    {
+      "id": "l1",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 5,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l2",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 1,
+      "description": "Park view"
+    },
+    {
+      "id": "l3",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l4",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l5",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 1,
+      "description": "Park view"
+    },
+    {
+      "id": "l6",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 3,
+      "description": "Nice place near center"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "listingId": "l1",
+      "userId": "u1",
+      "checkIn": "2025-10-20",
+      "checkOut": "2025-10-22",
+      "guests": 2,
+      "createdAt": "2025-10-10T10:00:00.000Z"
+    },
+    {
+      "id": "b_fffd2434-a46d-4818-bca2-368b645cc834",
+      "listingId": "l1",
+      "userId": "u1",
+      "checkIn": "2025-11-01",
+      "checkOut": "2025-11-09",
+      "guests": 1,
+      "createdAt": "2025-10-17T06:19:11.431Z"
+    },
+    {
+      "id": "b_9281da31-2c34-4d41-bad0-d9055e5676d1",
+      "listingId": "l3",
+      "userId": "u1",
+      "checkIn": "2025-10-17",
+      "checkOut": "2025-10-31",
+      "guests": 1,
+      "createdAt": "2025-10-18T06:20:59.760Z"
+    },
+    {
+      "id": "b_4966780c-56b1-4ea6-b993-ec6b254b6499",
+      "listingId": "l1",
+      "userId": "u1",
+      "checkIn": "2025-10-23",
+      "checkOut": "2025-10-24",
+      "guests": 1,
+      "createdAt": "2025-10-18T06:50:28.948Z"
+    },
+    {
+      "id": "b_49bb8020-483a-4d68-98f4-733f5645b3b1",
+      "listingId": "l1",
+      "userId": "u1",
+      "checkIn": "2025-12-06",
+      "checkOut": "2026-01-11",
+      "guests": 4,
+      "createdAt": "2025-10-18T06:53:56.897Z"
+    },
+    {
+      "id": "b_d199a5a0-7d37-45f2-9430-8b7d1bfdc2c3",
+      "listingId": "l6",
+      "userId": "u1",
+      "checkIn": "2025-11-07",
+      "checkOut": "2025-11-08",
+      "guests": 1,
+      "createdAt": "2025-10-18T06:54:20.758Z"
+    }
+  ]
+}
