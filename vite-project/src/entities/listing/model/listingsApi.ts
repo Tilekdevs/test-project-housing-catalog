@@ -1,3 +1,4 @@
+"use server"
 import { apiClient } from '../../../shared/lib/axios'
 import { buildSearchParams } from '../../../shared/lib/utils'
 import type { Booking, Listing, PaginatedResponse } from './types'

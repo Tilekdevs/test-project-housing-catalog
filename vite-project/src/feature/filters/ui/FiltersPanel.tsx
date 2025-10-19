@@ -1,3 +1,4 @@
+"use client"
 import { useState } from 'react'
 import { useCities } from '../model/useCities'
 import { useFilters } from '../model/useFilters'

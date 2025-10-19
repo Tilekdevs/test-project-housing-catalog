@@ -1,3 +1,4 @@
+"use client"
 import { FiltersPanelWidget } from '../../widgets/filters-panel/ui/FiltersPanelWidget'
 import { ListingListContainer } from '../../widgets/listing-list/ui/ListingListContainer'
 

@@ -10,7 +10,10 @@ export const useCities = () => {
 		const fetchCities = async () => {
 			try {
 				const listings: Listing[] = await listingsApi.getListings({})
-				const uniqueCities = getUniqueValues(listings, 'city').sort()
+				const uniqueCities = getUniqueValues(listings, 'city')
+					.filter((c): c is string => typeof c === 'string')
+					.sort()
+				setCities(uniqueCities)
 				setCities(uniqueCities)
 			} catch (err) {
 				console.error('Ошибка при загрузке городов:', err)
