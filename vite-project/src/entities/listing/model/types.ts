@@ -18,3 +18,11 @@ export interface Booking {
   listingId: string;
   guests: number;
 }
+
+export interface PaginatedResponse<T> {
+  data: T[];
+  total: number;
+  page: number;
+  limit: number;
+  totalPages: number;
+}

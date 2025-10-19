@@ -1,51 +1,80 @@
 @import 'tailwindcss';
 
-body {
-	@apply bg-gray-50 text-gray-800 antialiased;
-	font-family: 'Inter', system-ui, sans-serif;
+/* Поддержка dark mode для Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Базовые стили для html и body */
+html, body {
+  @apply bg-gray-50 text-gray-800 antialiased dark:bg-gray-900 dark:text-gray-100;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+/* Ссылки */
 a {
-	@apply text-gray-700 transition-colors hover:text-blue-600 underline-offset-4 hover:underline;
+  @apply transition-colors underline-offset-4 hover:underline dark:text-blue-400;
 }
 
+/* Кнопки */
 button {
-	@apply transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
+/* Видимые фокусы */
 :focus-visible {
-	outline: 2px solid #3b82f6;
-	outline-offset: 2px;
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
-/* Карточки и тени */
+/* Карточки */
 .card {
-	@apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition p-4;
+  @apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition p-4 dark:bg-gray-800 dark:text-gray-100;
 }
 
 /* Формы */
 input,
 select,
 textarea {
-	@apply rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-900 placeholder:text-gray-400 shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50;
+  @apply rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-900 placeholder:text-gray-400 shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder:text-gray-400;
 }
 
-/* Кнопки */
+/* Общие кнопки */
 .btn {
-	@apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
+/* Основная кнопка */
 .btn-primary {
-	@apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-blue-600 text-white hover:bg-blue-700;
+  @apply bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600;
 }
 
+/* Кнопка outline */
 .btn-outline {
-	@apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border border-gray-300 bg-white text-gray-700 hover:bg-gray-50;
+  @apply border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600;
 }
 
 /* Заголовки */
-h1,
-h2,
-h3 {
-	@apply font-semibold text-gray-900 tracking-tight;
+h1, h2, h3 {
+  @apply font-semibold text-gray-900 tracking-tight dark:text-gray-100;
+}
+
+/* Дополнительные блоки и контейнеры */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-8;
+}
+
+/* Списки */
+ul, ol {
+  @apply list-inside list-disc dark:text-gray-100;
+}
+
+/* Модальные окна */
+.modal {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-2xl p-6 shadow-lg;
 }

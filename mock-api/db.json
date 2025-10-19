@@ -119,6 +119,78 @@
       ],
       "bookingsCount": 3,
       "description": "Nice place near center"
+    },
+    {
+      "id": "l7",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 3,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l8",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 3,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l9",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 3,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l10",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 30,
+      "rating": 4.0,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 3,
+      "description": "Nice place near center"
     }
   ],
   "bookings": [
